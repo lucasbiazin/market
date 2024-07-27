@@ -1,9 +1,8 @@
 package br.com.tbiazin.service;
 
-
 import br.com.tbiazin.domain.ProdutoVenda;
 import br.com.tbiazin.repository.IProdutoVendaRepository;
-import br.com.tbiazin.service.ProdutoVendaService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,6 +13,7 @@ public class ProdutoVendaServices implements ProdutoVendaService {
 
     private final IProdutoVendaRepository produtoVendaRepository;
 
+    @Autowired
     public ProdutoVendaServices(IProdutoVendaRepository produtoVendaRepository) {
         this.produtoVendaRepository = produtoVendaRepository;
     }

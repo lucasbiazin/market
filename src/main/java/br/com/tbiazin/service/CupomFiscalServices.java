@@ -23,7 +23,7 @@ public class CupomFiscalServices implements CupomFiscalService {
     public String gerarCupomFiscal(Venda venda) {
         StringBuilder cupom = new StringBuilder();
         
-        TipoDePagamentoEnum tipoPagamento = venda.getTipoPagamento();  // Tipo de pagamento como enum
+        TipoDePagamentoEnum tipoPagamento = venda.getTipoPagamento(); 
 
 
         cupom.append("-------- CUPOM FISCAL --------\n");
@@ -58,7 +58,7 @@ public class CupomFiscalServices implements CupomFiscalService {
 
         cupom.append("-----------------------------\n");
         cupom.append("Total: R$").append(df.format(total)).append("\n");
-        cupom.append("Forma de Pagamento: ").append(tipoPagamento.name()).append("\n"); // Adicionando a forma de pagamento
+        cupom.append("Forma de Pagamento: ").append(tipoPagamento.name()).append("\n");
         cupom.append("-----------------------------\n");
         cupom.append("Obrigado e volte sempre!\n");
 

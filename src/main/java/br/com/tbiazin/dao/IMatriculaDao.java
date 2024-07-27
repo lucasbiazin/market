@@ -8,10 +8,7 @@ import java.util.List;
 import br.com.tbiazin.domain.Curso;
 import br.com.tbiazin.domain.Matricula;
 
-/**
- * @author rodrigo.pires
- *
- */
+
 public interface IMatriculaDao {
 
 	Matricula cadastrar(Matricula mat);

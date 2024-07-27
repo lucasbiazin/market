@@ -5,12 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-import jakarta.persistence.EntityManager;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
 import br.com.tbiazin.Util.TipoDePagamentoEnum;
@@ -19,9 +18,10 @@ import br.com.tbiazin.domain.PDV;
 import br.com.tbiazin.domain.Produto;
 import br.com.tbiazin.domain.ProdutoVenda;
 import br.com.tbiazin.domain.Venda;
+import jakarta.persistence.EntityManager;
+import br.com.tbiazin.market.MarketApplicationTests;
 
-
-
+@SpringBootTest(classes = MarketApplicationTests.class)
 @Transactional
 public class ProdutoVendaRepositoryTest {
 
@@ -30,13 +30,10 @@ public class ProdutoVendaRepositoryTest {
 
     @BeforeEach
     public void setUp() {
-        // Qualquer configuração necessária antes de cada teste
-    }
+            }
 
     @AfterEach
-    public void tearDown() {
-        // Qualquer limpeza necessária após cada teste
-    }
+    public void tearDown() {}
 
     @Test
     public void testSaveProdutoVenda() {

@@ -25,13 +25,13 @@ public class ClienteTest {
         cliente.setId(1l);
         cliente.setNome("Lucas Biazin");
         cliente.setTelefone("17981716648");
-        cliente.setRua("Rua dos Bambis");
+        cliente.setRua("Rua");
         cliente.setNumero(10l);
-        cliente.setBairro("Bairro Trikas");
+        cliente.setBairro("Bairro");
 
         clienteDao.cadastrar(cliente);
 
-        Cliente clienteCadastrado = clienteDao.buscarPorId(1l);
+        Cliente clienteCadastrado = clienteDao.buscarPorId(20);
         assertNotNull(clienteCadastrado);
         assertTrue(clienteCadastrado.getNome().equals("Lucas Biazin"));
     }
