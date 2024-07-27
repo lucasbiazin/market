@@ -1,4 +1,5 @@
-package br.com.tbiazin.market.controller;
+package br.com.tbiazin.controller;
+
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -14,10 +14,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 
-/**
- * @author lucas.biazin
- *
- */
+
 @Entity
 @Table(name = "TB_CURSO")
 public class Curso {

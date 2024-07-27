@@ -4,16 +4,20 @@ package br.com.tbiazin.service;
 import br.com.tbiazin.Util.TipoDePagamentoEnum;
 import br.com.tbiazin.domain.ProdutoVenda;
 import br.com.tbiazin.domain.Venda;
-import br.com.tbiazin.service.CupomFiscalService;
+import br.com.tbiazin.service.ICupomFiscalService;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.time.format.DateTimeFormatter;
+
+import org.springframework.stereotype.Service;
+
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
-public class CupomFiscalServices implements CupomFiscalService {
+@Service
+public class CupomFiscalServices implements ICupomFiscalService {
 
 	
 	

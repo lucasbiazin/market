@@ -3,11 +3,11 @@ package br.com.tbiazin.service;
 
 import br.com.tbiazin.domain.PDV;
 import br.com.tbiazin.repository.IPDVRepository;
-import br.com.tbiazin.service.PDVService;
+import br.com.tbiazin.service.IPDVService;
 
 import java.util.List;
 
-public class PDVServices implements PDVService {
+public class PDVServices implements IPDVService {
 
     private final IPDVRepository pdvRepository;
 

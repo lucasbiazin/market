@@ -5,7 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories(basePackages = "br.com.tbiazin.repository")
+@EnableJpaRepositories(basePackages = "br.com.tbiazin.domain")
+ 
 public
 class MarketApplicationTests {
 

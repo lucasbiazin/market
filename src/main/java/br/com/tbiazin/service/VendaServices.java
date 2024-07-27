@@ -2,16 +2,20 @@ package br.com.tbiazin.service;
 
 
 import br.com.tbiazin.domain.Venda;
+
 import br.com.tbiazin.repository.IVendaRepository;
-import br.com.tbiazin.service.VendaService;
+import br.com.tbiazin.service.IVendaService;
 
 import java.util.List;
 
-public class VendaServices implements VendaService {
+import org.springframework.stereotype.Service;
+
+@Service
+public class VendaServices implements IVendaService {
 
     private IVendaRepository vendaRepository = null;
 
-    public VendaServices() {
+    public VendaServices(IVendaRepository vendaRepository) {
         this.vendaRepository = vendaRepository;
     }
 
@@ -27,16 +31,24 @@ public class VendaServices implements VendaService {
 
     @Override
     public void deleteVenda(Long id) {
-        vendaRepository.delete(id);
+        vendaRepository.deleteById(id);
     }
 
-    @Override
-    public Venda getVendaById(Long id) {
-        return vendaRepository.findById(id);
-    }
+  
 
     @Override
     public List<Venda> getAllVendas() {
         return vendaRepository.findAll();
     }
+
+	@Override
+	public void salvar(Venda venda) {
+		return;
+	}
+
+	@Override
+	public Venda getVendaById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

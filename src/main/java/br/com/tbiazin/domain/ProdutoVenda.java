@@ -35,8 +35,6 @@ public class ProdutoVenda {
         this.precoUnitario = precoUnitario;
     }
 
-
-    // Getters e setters
     public Long getId() {
         return id;
     }

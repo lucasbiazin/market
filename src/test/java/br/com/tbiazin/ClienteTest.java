@@ -31,7 +31,7 @@ public class ClienteTest {
 
         clienteDao.cadastrar(cliente);
 
-        Cliente clienteCadastrado = clienteDao.buscarPorId(20);
+        Cliente clienteCadastrado = clienteDao.buscarPorId(32);
         assertNotNull(clienteCadastrado);
         assertTrue(clienteCadastrado.getNome().equals("Lucas Biazin"));
     }

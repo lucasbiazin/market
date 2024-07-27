@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ProdutoVendaServices implements ProdutoVendaService {
+public class ProdutoVendaServices implements IProdutoVendaService {
 
     private final IProdutoVendaRepository produtoVendaRepository;
 

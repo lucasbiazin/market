@@ -3,11 +3,11 @@ package br.com.tbiazin.service;
 
 import br.com.tbiazin.domain.Cliente;
 import br.com.tbiazin.repository.IClienteRepository;
-import br.com.tbiazin.service.ClienteService;
+import br.com.tbiazin.service.IClienteService;
 
 import java.util.List;
 
-public class ClienteServices implements ClienteService {
+public class ClienteServices implements IClienteService {
 
     private final IClienteRepository clienteRepository;
 

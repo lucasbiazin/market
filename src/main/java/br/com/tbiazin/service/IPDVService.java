@@ -4,7 +4,7 @@ import br.com.tbiazin.domain.PDV;
 
 import java.util.List;
 
-public interface PDVService {
+public interface IPDVService {
     PDV createPDV(PDV pdv);
     PDV updatePDV(PDV pdv);
     void deletePDV(Long id);

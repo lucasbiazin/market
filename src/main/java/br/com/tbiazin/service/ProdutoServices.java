@@ -3,11 +3,11 @@ package br.com.tbiazin.service;
 
 import br.com.tbiazin.domain.Produto;
 import br.com.tbiazin.repository.IProdutoRepository;
-import br.com.tbiazin.service.ProdutoService;
+import br.com.tbiazin.service.IProdutoService;
 
 import java.util.List;
 
-public class ProdutoServices implements ProdutoService {
+public class ProdutoServices implements IProdutoService {
 
     private final IProdutoRepository produtoRepository;
 

@@ -4,7 +4,7 @@ import br.com.tbiazin.domain.ProdutoVenda;
 
 import java.util.List;
 
-public interface ProdutoVendaService {
+public interface IProdutoVendaService {
     ProdutoVenda createProdutoVenda(ProdutoVenda produtoVenda);
     ProdutoVenda updateProdutoVenda(ProdutoVenda produtoVenda);
     void deleteProdutoVenda(Long id);
